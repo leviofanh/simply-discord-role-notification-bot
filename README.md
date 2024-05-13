@@ -2,8 +2,7 @@
 
 ### Description
 
-This Discord bot allows you to customize a special message that will be sent to users when they get a new role on the server.
-
+This Discord bot enables you to personalize a custom message that will be sent to users upon receiving a new role on the server.
 ### Setup
 
 #### Prerequisites
@@ -25,12 +24,12 @@ The first thing to do is to customize the message.
 There's a command for that:
 #### //?setmsg your message
 
-The following variables can be used in the command:
-- {USER} - The user in the message will be mentioned.
-- {ROLE} - It will be written which role was issued.
-- {SERVER} - The name of the server will be mentioned in the server message.
+You can utilize the following variables in the command:
+- {USER} - Mentions the user in the message.
+- {ROLE} - Specifies the issued role.
+- {SERVER} - Mentions the name of the server in the message.
 
-There is an option to add roles to the exception. When issuing a role that is in exceptions, the user will not be notified.
+Additionally, you can manage exception roles. When a role listed in the exceptions is issued, the user will not receive a notification.
 
 Add to exception:
 #### //?exrole @ROLE
