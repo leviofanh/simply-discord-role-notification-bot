@@ -36,4 +36,4 @@ Add to exception:
 #### //?exrole @ROLE
 
 Remove from the exception:
-#### //?unerole @ROLE
+#### //?unexrole @ROLE
