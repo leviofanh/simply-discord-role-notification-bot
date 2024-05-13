@@ -16,7 +16,7 @@ This Discord bot allows you to customize a special message that will be sent to 
 3. Set up bot permissions on the Discord Developer Portal.
 4. Create a key.txt file and paste your Discord bot token inside it.
 5. Run the bot script:
-    python main.py
+   ##### python main.py
 6. Set up bot permissions on the Discord Developer Portal.
 7. Invite the bot to your Discord server using the OAuth2 URL generated from the Discord Developer Portal.
 
@@ -26,9 +26,9 @@ There's a command for that:
 ##### //?setmsg your mesage
 
 The following variables can be used in the command:
-{USER} - The user in the message will be mentioned.
-{ROLE} - It will be written which role was issued.
-{SERVER} - The name of the server will be mentioned in the server message.
+- {USER} - The user in the message will be mentioned.
+- {ROLE} - It will be written which role was issued.
+- {SERVER} - The name of the server will be mentioned in the server message.
 
 There is an option to add roles to the exception. When issuing a role that is in exceptions, the user will not be notified.
 
