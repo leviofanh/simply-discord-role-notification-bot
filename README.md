@@ -23,7 +23,7 @@ This Discord bot allows you to customize a special message that will be sent to 
 ### Commands
 The first thing to do is to customize the message.
 There's a command for that:
-##### //?setmsg your mesage
+#### //?setmsg your mesage
 
 The following variables can be used in the command:
 - {USER} - The user in the message will be mentioned.
@@ -33,7 +33,7 @@ The following variables can be used in the command:
 There is an option to add roles to the exception. When issuing a role that is in exceptions, the user will not be notified.
 
 Add to exception:
-##### //?exrole @ROLE
+#### //?exrole @ROLE
 
 Remove from the exception:
-##### //?unerole @ROLE
+#### //?unerole @ROLE
