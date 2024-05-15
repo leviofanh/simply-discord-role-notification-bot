@@ -16,8 +16,7 @@ This Discord bot enables you to personalize a custom message that will be sent t
 4. Create a key.txt file and paste your Discord bot token inside it.
 5. Run the bot script:
    ##### python main.py
-6. Set up bot permissions on the Discord Developer Portal.
-7. Invite the bot to your Discord server using the OAuth2 URL generated from the Discord Developer Portal.
+6. Invite the bot to your Discord server using the OAuth2 URL generated from the Discord Developer Portal.
 
 ### Commands
 The first thing to do is to customize the message.
