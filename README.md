@@ -8,8 +8,9 @@ This Discord bot enables you to personalize a custom message that will be sent t
 #### Prerequisites
 - Python 3.x installed on your system.
 - Discord.py library installed.
+- SQLAlchemy library installed.
 
-### Setup
+### Quick Setup
 1. Clone this repository.
 2. Create a new app on the Discord developer portal.
 3. Set up bot permissions on the Discord Developer Portal.
@@ -19,11 +20,13 @@ This Discord bot enables you to personalize a custom message that will be sent t
 6. Invite the bot to your Discord server using the OAuth2 URL generated from the Discord Developer Portal.
 
 ### Commands
-The first thing to do is to customize the message.
-There's a command for that:
+Set default message:
 #### //?setmsg your message
 
-You can utilize the following variables in the command:
+Set a message when a specific role is issued:
+#### //?setmsg @ROLE your message
+
+You can utilize the following variables in the commands:
 - {USER} - Mentions the user in the message.
 - {ROLE} - Specifies the issued role.
 - {SERVER} - Mentions the name of the server in the message.
@@ -35,3 +38,4 @@ Add to exception:
 
 Remove from the exception:
 #### //?unexrole @ROLE
+
