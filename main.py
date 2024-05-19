@@ -16,7 +16,16 @@ intents.members = True
 PREFIX = config['bot']['BOT_PREFIX']
 bot = commands.Bot(command_prefix=PREFIX, intents=intents)
 
-DATABASE_URL = 'sqlite:///config.db'
+
+if config['database']['USE_ENV'].lower() == 'yes':
+    ENV = config['database']['ENV_NAME']
+    DATABASE_URL = (os.environ[ENV])
+    print('USING ENV')
+
+if config['database']['USE_ENV'].lower() == 'no':
+    DATABASE_URL = config['database']['DATABASE_URL']
+
+
 DEFAULT_MESSAGE = config['bot']['DEFAULT_MESSAGE']
 STATUS = config['bot']['STATUS']
 
