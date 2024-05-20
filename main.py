@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from sqlalchemy import create_engine, Column, Integer, Text
+from sqlalchemy import create_engine, Column, Integer, Text, BigInteger
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
 import configparser
@@ -37,20 +37,20 @@ session = Session()
 
 class Settings(Base):
     __tablename__ = 'settings'
-    server_id = Column(Integer, primary_key=True)
+    server_id = Column(BigInteger, primary_key=True)
     message = Column(Text, default=DEFAULT_MESSAGE)
 
 
 class ExcludedRole(Base):
     __tablename__ = 'excluded_roles'
-    server_id = Column(Integer, primary_key=True)
-    role_id = Column(Integer, primary_key=True)
+    server_id = Column(BigInteger, primary_key=True)
+    role_id = Column(BigInteger, primary_key=True)
 
 
 class RoleMessage(Base):
     __tablename__ = 'role_messages'
-    server_id = Column(Integer, primary_key=True)
-    role_id = Column(Integer, primary_key=True)
+    server_id = Column(BigInteger, primary_key=True)
+    role_id = Column(BigInteger, primary_key=True)
     message = Column(Text)
 
 
